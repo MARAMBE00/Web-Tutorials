@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Valentines Flowers - Order your flowers online</title>
+        <link rel="stylesheet" href="tutorial7.css">
+        
+
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <h1>Valentines Flowers</h1>
+
+            <div class="product" id="product1">
+                <img src="images/white.jpeg" alt="White Flower"> 
+                <div class="description">
+                    <h3>White Bouquet</h3>
+                    <div class="price">&#163; 24</div>
+                </div>
+            </div>
+
+            <div class="product" id="product2">
+                <img src="images/pink.jpeg" alt="Pink Flower"> 
+                <div class="description">
+                    <h3>Pink Bouquet</h3>
+                    <div class="price">&#163; 25</div>
+                </div>
+            </div>
+
+            <div class="product"  id="product3">
+                <img src="images/red.jpeg" alt="Red Flower"> 
+                <div class="description">
+                    <h3>Red Bouquet</h3>
+                    <div class="price">&#163; 20</div>
+                </div>
+            </div>
+
+            <div class="labelOrder">
+                Your Order:
+                <div id="orderDescription">
+                </div>
+                <div class="product" id="order">
+                </div>
+            </div>
+
+            <div class="orderStyle">
+                <form name="order" id="order" onReset="resetOrder();">
+                    Bouquet Options
+                    <select name="bouquetOptions" id="bouquetOptions" onChange="CheckOptions(this.form);">
+                        <option value="pleaseSelect">Please Select</option>
+                        <option value="withChampagne">with Champagne</option>
+                        <option value="extra">50% Extra Flowers</option>
+                        <option value="extraWithChampagne">50% Extra Flowers and Champagne</option>
+                    </select>
+
+                Bouquet Colour:
+                <input type="radio" name="colour" id="white" value="white">
+                <label for="white">white</label>
+                <input type="radio" name="colour" id="pink" value="pink">
+                <label for="pink">pink</label>
+                <input type="radio" name="colour" id="red" value="red">
+                <label for="red">red</label>
+                
+                <input type="reset" name="reset" value="Clear your order">
+                <input type="submit" name="submit" value="Place your order">
+                </form>
+
+            </div>
+
+        </div>
+
+        <script src="tutorial7.js"></script>
+
+    </body>
+
+</html>
