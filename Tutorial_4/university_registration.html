@@ -1,0 +1,106 @@
+<!doctype html>
+<html = lang="en">
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>University Registration</title>
+		
+		<style>
+		
+			fieldset{
+				background-color: #87CEFA;
+			}
+			
+			label{
+				width: 150px;
+				display: inline-block;
+			}
+			
+			#btn{
+				width: 1450px;
+				padding: 10px;
+				margin: 0;
+				background-color: red;			
+			}
+			
+		</style>
+			
+	</head>
+	
+	
+	<body>
+	
+		<form>
+		
+			<h1>University Registration</h1>
+			<fieldset>
+				<p>Your Details</p>
+				<label for="firstName">First Name:</label>
+					<input type="text" name="firstName" id="firstName" size="25" placeholder="Enter your first name"> <br><br>					
+				<label for="surname">Surname:</label>
+					<input type="text" name="surname" id="surname" size="25" placeholder="Enter your surname"> <br>
+				
+				<br><br>
+				
+				<label for="email">Email Address:</label>
+					<input type="email" name="email" id="email" size="25" placeholder="Enter your email">
+				
+				<br><br>
+				
+				<label for="password">Password:</label>
+					<input type="password" name="pin" id="password" size="25">			
+				
+				<br><br>
+				
+				<label>Level:</label><br>
+					<label for="under">Undergraduate</label>
+					<input type="radio" name="level" id="under" value="under"> <br>
+					<label for="post">Postgraduate</label>
+					<input type="radio" name="level" id="post" value="post">
+								
+				
+				<br><br>
+				
+				<label for="comments">Any comments:</label>
+					<textarea name="comments" id="comments" rows="5" cols="20"></textarea>
+				
+				<br><br>
+			
+				<label for="course">Course:</label>
+					<select name"course" id="course">
+						<option>BSc(Hons) Artificial Intelligence and Data Science</option>
+						<option>BSc(Hons) Computer Science</option>
+						<option>BEng(Hons) Software Engineering</option>
+						<option>BSc(Hons) Business Information Systems</option>
+						<option>BA(Hons) Business Management</option>
+						<option>BSc (Hons) Business Data Analytics</option>
+						
+						<option>MSc Advanced Software Engineering</option>
+						<option>MSc Cyber Security and Forensics</option>
+						<option>MSc Big Data Analytics</option>
+						<option>MSc Information Technology</option>
+						<option>MSc Business Analytics</option>
+						<option>MA Fashion Business Management</option>
+					</select>
+					
+				<br><br>
+				
+				<label>Terms and Conditions</label>
+					<input type="checkbox" name="terms" id="terms" required>
+					
+				<br><br>
+				
+				<div id="btn">
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Reset">
+				</div>
+				
+			</fieldset>
+		
+		</form>
+
+	
+	</body>
+
+</html>
